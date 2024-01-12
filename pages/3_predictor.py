@@ -82,6 +82,6 @@ if button:
         stacking = pickle.load(model)
         st.header("Stacking:")
         st.write(bool(stacking.predict(data)[0]))
-    mlp = tf.keras.models.load_model('./models/mlp.keras')
+    mlp = tf.keras.models.load_model('./models/mlp.h5')
     st.header("MLP:")
     st.write(bool(mlp.predict(data)[0]))
